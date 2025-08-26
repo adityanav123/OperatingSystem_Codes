@@ -36,7 +36,8 @@ int main(int argc, char *argv[]) {
             exit(1);
         }
 
-        sleep(1);
+        printf("Waiting for parent process to write something...\n");
+        sleep(2);
 
         // reading from shared mem
         printf("Child Reads: %s\n", sharedMem);
